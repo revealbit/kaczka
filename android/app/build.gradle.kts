@@ -5,7 +5,7 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
-val env = rootProject.file("../../.env")
+val env = rootProject.file("../.env")
     .readLines()
     .filter { it.isNotBlank() && !it.startsWith("#") && it.contains("=") }
     .associate { line -> line.substringBefore("=") to line.substringAfter("=") }

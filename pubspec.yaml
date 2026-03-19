@@ -15,16 +15,16 @@ dependencies:
   riverpod_annotation: ^4.0.2
 
   # Navigation
-  go_router: ^14.6.3
+  go_router: ^17.1.0
 
   # Maps (OpenStreetMap — no API key needed)
-  flutter_map: ^7.0.2
+  flutter_map: ^8.2.2
   latlong2: ^0.9.1
-  flutter_map_animations: ^0.7.0
+  flutter_map_animations: ^0.9.0
 
   # Local database (offline GPS buffer)
   drift: ^2.22.1
-  sqlite3_flutter_libs: ^0.5.25
+  sqlite3_flutter_libs: ^0.6.0+eol
   path_provider: ^2.1.5
   path: ^1.9.1
 
@@ -32,17 +32,17 @@ dependencies:
   dio: ^5.7.0
 
   # GPS
-  geolocator: ^13.0.2
-  permission_handler: ^11.3.1
+  geolocator: ^14.0.2
+  permission_handler: ^12.0.1
 
   # Background service (foreground task for GPS)
-  flutter_foreground_task: ^8.14.0
+  flutter_foreground_task: ^9.2.1
 
   # Auth
-  google_sign_in: ^6.2.2
+  google_sign_in: ^7.2.0
 
   # Secure storage (tokens)
-  flutter_secure_storage: ^9.2.2
+  flutter_secure_storage: ^10.0.0
 
   # Animations
   lottie: ^3.3.1
