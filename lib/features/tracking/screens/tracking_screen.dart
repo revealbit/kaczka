@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:geolocator/geolocator.dart' hide ActivityType;
 import 'package:latlong2/latlong.dart';
 
+import '../../../core/constants/secrets.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../domain/models/session.dart';
 import '../providers/tracking_provider.dart';
@@ -85,8 +85,8 @@ class _TrackingScreenState extends ConsumerState<TrackingScreen> {
             ),
             children: [
               TileLayer(
-                urlTemplate: dotenv.env['OSM_TILE_URL']!,
-                userAgentPackageName: dotenv.env['OSM_USER_AGENT']!,
+                urlTemplate: Secrets.osmTileUrl,
+                userAgentPackageName: Secrets.osmUserAgent,
               ),
               if (routePoints.isNotEmpty) ...[
                 PolylineLayer(
