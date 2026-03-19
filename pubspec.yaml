@@ -1,0 +1,77 @@
+name: kaczka
+description: "Kaczka — fitness tracking app with gamification"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management (Riverpod 3.x — compatible with analyzer 7+)
+  flutter_riverpod: ^3.3.1
+  riverpod_annotation: ^4.0.2
+
+  # Navigation
+  go_router: ^14.6.3
+
+  # Maps (OpenStreetMap — no API key needed)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  flutter_map_animations: ^0.7.0
+
+  # Local database (offline GPS buffer)
+  drift: ^2.22.1
+  sqlite3_flutter_libs: ^0.5.25
+  path_provider: ^2.1.5
+  path: ^1.9.1
+
+  # HTTP client
+  dio: ^5.7.0
+
+  # GPS
+  geolocator: ^13.0.2
+  permission_handler: ^11.3.1
+
+  # Background service (foreground task for GPS)
+  flutter_foreground_task: ^8.14.0
+
+  # Auth
+  google_sign_in: ^6.2.2
+
+  # Secure storage (tokens)
+  flutter_secure_storage: ^9.2.2
+
+  # Animations
+  lottie: ^3.3.1
+
+  # Models
+  freezed_annotation: ^3.0.0
+  json_annotation: ^4.9.0
+
+  # Utilities
+  intl: ^0.20.1
+  uuid: ^4.5.1
+  equatable: ^2.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Code generation
+  riverpod_generator: ^4.0.3
+  build_runner: ^2.4.13
+  freezed: ^3.0.0
+  json_serializable: ^6.9.0
+  drift_dev: ^2.22.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/animations/
+    - assets/images/
+    - assets/lottie/
